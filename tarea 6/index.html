@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <center>
+    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(204, 18, 18);" >Adivino tu edad</p>
+    <input id="numero1" type="text">
+    <button style="background-color: black; color: azure;"  id="woton">ADIVINO</button>
+    <p id="parrafo" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(81, 46, 236);"></p>
+    </center>
+    <script>
+        document.getElementById("woton").addEventListener("click", preguntarNumero)
+
+      function preguntarNumero(){
+            const val = document.getElementById( "numero1" ).value
+            document.getElementById("parrafo").innerHTML = val
+      }
+    </script>
+</body>
+</html>
